@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Star, MapPin, Clock, Heart, Bookmark, Phone } from 'lucide-react';
 import GlassCard, { GlassButton } from '@/components/ui/GlassCard';
+import Image from 'next/image';
 
 const SalonCard = ({ salon, onFavorite, onBookmark, isFavorited = false, isBookmarked = false }) => {
   const {
@@ -59,10 +60,12 @@ const SalonCard = ({ salon, onFavorite, onBookmark, isFavorited = false, isBookm
       <div className="relative">
         {/* Image */}
         <div className="relative h-48 overflow-hidden">
-          <img
+          <Image
             src={images?.[0] || '/api/placeholder/400/200'}
             alt={name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            width={400}
+            height={200}
           />
           
           {/* Overlay with badges */}

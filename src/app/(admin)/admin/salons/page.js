@@ -12,6 +12,7 @@ import {
   PhoneIcon,
   EnvelopeIcon
 } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 export default function SalonManagement() {
   const [salons, setSalons] = useState([]);
@@ -141,10 +142,12 @@ export default function SalonManagement() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img
+                      <Image
                         className="h-16 w-16 rounded-lg object-cover"
                         src={salon.images?.[0] || '/placeholder-salon.jpg'}
                         alt={salon.name}
+                        width={64}
+                        height={64}
                       />
                     </div>
                     <div className="ml-4">

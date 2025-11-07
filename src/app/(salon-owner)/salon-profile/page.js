@@ -21,6 +21,7 @@ import {
   Scissors,
   Palette
 } from 'lucide-react';
+import Image from 'next/image';
 
 const SalonProfilePage = () => {
   const { userData } = useAuth();
@@ -552,7 +553,7 @@ const SalonProfilePage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {salonData.images.map((image, index) => (
                     <div key={index} className="relative group">
-                      <img
+                      <Image
                         src={image}
                         alt={`Salon photo ${index + 1}`}
                         className="w-full h-32 object-cover rounded-lg"

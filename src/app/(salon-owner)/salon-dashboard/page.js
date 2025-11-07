@@ -110,14 +110,14 @@ export default function SalonOwnerDashboard() {
                 Welcome back, {userData?.profile?.firstName}! 👋
               </h1>
               <p className="text-gray-600 mt-1">
-                Here's what's happening with your salon today
+                Heres whats happening with your salon today
               </p>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">{stats.todayBookings}</div>
-                  <div className="text-sm text-gray-600">Today's Bookings</div>
+                  <div className="text-sm text-gray-600">Todays Bookings</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-green-600">₹{stats.monthlyRevenue.toLocaleString()}</div>
@@ -162,7 +162,7 @@ export default function SalonOwnerDashboard() {
             <div className="relative">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600">Today's Bookings</p>
+                  <p className="text-sm text-gray-600">Todays Bookings</p>
                   <p className="text-2xl font-bold text-gray-800">{stats.todayBookings}</p>
                   <p className="text-sm text-blue-600 flex items-center mt-1">
                     <TrendingUp className="w-4 h-4 mr-1" />
@@ -270,7 +270,7 @@ export default function SalonOwnerDashboard() {
           {/* Today's Bookings */}
           <GlassCard className="p-6">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-lg font-semibold text-gray-800">Today's Bookings</h3>
+              <h3 className="text-lg font-semibold text-gray-800">Todays Bookings</h3>
               <Link href="/owner-appointments">
                 <GlassButton variant="secondary" className="text-sm">
                   View All

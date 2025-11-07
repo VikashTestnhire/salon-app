@@ -17,6 +17,7 @@ import {
   Wallet,
   ArrowLeft
 } from 'lucide-react';
+import Image from 'next/image';
 
 // Mock data for booking
 const mockSalonBooking = {
@@ -279,7 +280,7 @@ export default function BookAppointmentPage() {
         {/* Salon Header */}
         <GlassCard className="p-6">
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src={salon.image}
               alt={salon.name}
               className="w-16 h-16 rounded-lg object-cover"
@@ -432,7 +433,7 @@ export default function BookAppointmentPage() {
                           `}
                         >
                           <div className="flex items-center space-x-4">
-                            <img
+                            <Image
                               src={staff.avatar}
                               alt={staff.name}
                               className="w-16 h-16 rounded-full object-cover"
@@ -573,7 +574,7 @@ export default function BookAppointmentPage() {
                     <div className="border border-white/20 rounded-lg p-4">
                       <h3 className="font-semibold text-gray-800 mb-3">Stylist</h3>
                       <div className="flex items-center space-x-3">
-                        <img
+                        <Image
                           src={selectedStaff.avatar}
                           alt={selectedStaff.name}
                           className="w-12 h-12 rounded-full object-cover"

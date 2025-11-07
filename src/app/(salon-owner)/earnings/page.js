@@ -379,7 +379,7 @@ const EarningsPage = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="text-center p-4 bg-white/20 rounded-lg">
                       <div className="text-2xl font-bold text-gray-800">{earningsData.overview.todayEarnings}</div>
-                      <div className="text-sm text-gray-600">Today's Earnings</div>
+                      <div className="text-sm text-gray-600">Todays Earnings</div>
                     </div>
                     
                     <div className="text-center p-4 bg-white/20 rounded-lg">

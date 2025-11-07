@@ -25,6 +25,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
+import Image from 'next/image';
 
 // Mock data for salon details
 const mockSalonDetail = {
@@ -218,7 +219,7 @@ export default function SalonDetailPage() {
         <div className="container mx-auto px-4 py-6">
           <GlassCard className="p-8 text-center">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Salon Not Found</h2>
-            <p className="text-gray-600 mb-4">The salon you're looking for doesn't exist.</p>
+            <p className="text-gray-600 mb-4">The salon you are looking for does not exist.</p>
             <GlassButton onClick={() => router.push('/dashboard')}>
               Back to Search
             </GlassButton>
@@ -252,10 +253,12 @@ export default function SalonDetailPage() {
             <GlassCard className="overflow-hidden">
               <div className="relative">
                 <div className="h-64 md:h-80 overflow-hidden">
-                  <img
+                  <Image
                     src={salon.images[currentImageIndex]}
                     alt={salon.name}
                     className="w-full h-full object-cover"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 
@@ -331,7 +334,7 @@ export default function SalonDetailPage() {
                           index === currentImageIndex ? 'border-blue-500' : 'border-white/20'
                         }`}
                       >
-                        <img src={image} alt={`${salon.name} ${index + 1}`} className="w-full h-full object-cover" />
+                        <Image src={image} alt={`${salon.name} ${index + 1}`} className="w-full h-full object-cover" />
                       </button>
                     ))}
                   </div>
@@ -489,10 +492,12 @@ export default function SalonDetailPage() {
                     {salon.staff.map((member) => (
                       <div key={member.id} className="border border-white/20 rounded-lg p-4">
                         <div className="flex items-center space-x-4">
-                          <img
+                          <Image
                             src={member.avatar}
                             alt={member.name}
                             className="w-16 h-16 rounded-full object-cover"
+                            width={64}
+                            height={64}
                           />
                           <div className="flex-1">
                             <h4 className="font-semibold text-gray-800">{member.name}</h4>

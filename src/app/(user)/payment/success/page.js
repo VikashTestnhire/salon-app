@@ -122,14 +122,14 @@ const PaymentSuccessPage = () => {
             
             <h1 className="text-3xl font-bold text-gray-800 mb-2">Booking Confirmed!</h1>
             <p className="text-gray-600 mb-6">
-              Your appointment has been successfully booked. We've sent a confirmation to your email.
+              Your appointment has been successfully booked. We have sent a confirmation to your email.
             </p>
             
             <div className="bg-green-50/50 border border-green-200/50 rounded-lg p-4 mb-6">
               <div className="flex items-center justify-center space-x-2">
                 <Gift className="w-5 h-5 text-green-600" />
                 <span className="text-green-800 font-medium">
-                  You've earned 50 loyalty points!
+                  You have earned 50 loyalty points!
                 </span>
               </div>
             </div>
@@ -290,7 +290,7 @@ const PaymentSuccessPage = () => {
           <div className="space-y-6">
             {/* Next Steps */}
             <GlassCard className="p-6 sticky top-6">
-              <h3 className="font-bold text-gray-800 mb-4">What's Next?</h3>
+              <h3 className="font-bold text-gray-800 mb-4">What is Next?</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -299,7 +299,7 @@ const PaymentSuccessPage = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-800">Confirmation SMS</p>
-                    <p className="text-sm text-gray-600">You'll receive an SMS with appointment details</p>
+                    <p className="text-sm text-gray-600">You will receive an SMS with appointment details</p>
                   </div>
                 </div>
                 
@@ -309,7 +309,7 @@ const PaymentSuccessPage = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-800">Reminder Alert</p>
-                    <p className="text-sm text-gray-600">We'll remind you 2 hours before your appointment</p>
+                    <p className="text-sm text-gray-600">We will remind you 2 hours before your appointment</p>
                   </div>
                 </div>
                 

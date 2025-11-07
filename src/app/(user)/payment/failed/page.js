@@ -58,7 +58,7 @@ const PaymentFailedPage = () => {
             
             <h1 className="text-3xl font-bold text-gray-800 mb-2">Payment Failed</h1>
             <p className="text-gray-600 mb-6">
-              We couldn't process your payment. Don't worry, no amount has been deducted from your account.
+              We couldnt process your payment. Dont worry, no amount has been deducted from your account.
             </p>
             
             <div className="bg-red-50/50 border border-red-200/50 rounded-lg p-4 mb-6">

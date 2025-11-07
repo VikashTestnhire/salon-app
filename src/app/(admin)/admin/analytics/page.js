@@ -8,8 +8,7 @@ import {
   UsersIcon,
   BuildingStorefrontIcon,
   CalendarDaysIcon,
-  TrendingUpIcon,
-  TrendingDownIcon,
+  ArrowTrendingDownIcon,
   ChartBarIcon
 } from '@heroicons/react/24/outline';
 
@@ -221,9 +220,9 @@ export default function Analytics() {
                     <dd className="text-lg font-medium text-gray-900">₹{analytics.revenue.thisMonth.toLocaleString()}</dd>
                     <dd className="flex items-center text-sm">
                       {revenueGrowth >= 0 ? (
-                        <TrendingUpIcon className="h-4 w-4 text-green-500 mr-1" />
+                        <ArrowTrendingDownIcon className="h-4 w-4 text-green-500 mr-1" />
                       ) : (
-                        <TrendingDownIcon className="h-4 w-4 text-red-500 mr-1" />
+                        <ArrowTrendingDownIcon className="h-4 w-4 text-red-500 mr-1" />
                       )}
                       <span className={revenueGrowth >= 0 ? 'text-green-600' : 'text-red-600'}>
                         {Math.abs(revenueGrowth).toFixed(1)}%

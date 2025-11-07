@@ -20,6 +20,7 @@ import {
   CheckCircle,
   AlertTriangle
 } from 'lucide-react';
+import Image from 'next/image';
 
 // Mock data for reviews
 const mockReviews = [
@@ -381,7 +382,7 @@ const ReviewsPage = () => {
                 {/* Review Header */}
                 <div className="flex items-start justify-between">
                   <div className="flex items-center space-x-4">
-                    <img
+                    <Image
                       src={review.customerAvatar}
                       alt={review.customerName}
                       className="w-10 h-10 rounded-full object-cover"
@@ -430,7 +431,7 @@ const ReviewsPage = () => {
                   {review.images.length > 0 && (
                     <div className="flex space-x-2 mt-3">
                       {review.images.map((image, index) => (
-                        <img
+                        <Image
                           key={index}
                           src={image}
                           alt={`Review image ${index + 1}`}
@@ -503,7 +504,7 @@ const ReviewsPage = () => {
               {/* Original Review */}
               <div className="bg-gray-50/50 rounded-lg p-4 mb-6">
                 <div className="flex items-center space-x-3 mb-3">
-                  <img
+                  <Image
                     src={selectedReview.customerAvatar}
                     alt={selectedReview.customerName}
                     className="w-8 h-8 rounded-full object-cover"

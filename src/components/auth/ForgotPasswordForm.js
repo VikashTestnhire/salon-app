@@ -68,10 +68,10 @@ const ForgotPasswordForm = () => {
               Check your email
             </h2>
             <p className="mt-2 text-sm text-gray-600">
-              We've sent a password reset link to <strong>{email}</strong>
+              We have sent a password reset link to <strong>{email}</strong>
             </p>
             <p className="mt-4 text-sm text-gray-600">
-              Didn't receive the email? Check your spam folder or{' '}
+              Did not receive the email? Check your spam folder or{' '}
               <button
                 onClick={() => {
                   setSuccess(false);
@@ -104,7 +104,7 @@ const ForgotPasswordForm = () => {
             Forgot your password?
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Enter your email address and we'll send you a link to reset your password.
+            Enter your email address and we will send you a link to reset your password.
           </p>
         </div>
         
